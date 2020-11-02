@@ -1,8 +1,3 @@
-/* Template: Leno - Mobile App Landing Page Template
-   Author: Inovatik
-   Description: Custom JS file
-*/
-
 
 (function($) {
     "use strict"; 
@@ -11,9 +6,11 @@
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 60) {
+            //$(".fixed-top").removeClass("navbar");
 			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
+		} else {            
+            $(".fixed-top").removeClass("top-nav-collapse");
+            //$(".fixed.top").addClass("navbar");
 		}
     });
     
